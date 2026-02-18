@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Парикмахерская «Локон» — искусство стиля</title>
+  <!-- Премиальные шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (иконки) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Основной CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка (sticky) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Локон" class="logo-img">
+        <span class="logo-text">Локон</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Главная</a></li>
+          <li><a href="#about" class="nav-link">О нас</a></li>
+          <li><a href="#masters" class="nav-link">Мастера</a></li>
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+          <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-contacts">
+        <a href="tel:+71234567890" class="header-phone"><i class="fas fa-phone-alt"></i> +7 (123) 456-78-90</a>
+        <a href="#booking" class="btn btn-small">Записаться</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero секция с параллаксом и декоративным узором -->
+    <section id="hero" class="hero" style="background-image: url('images/hero-bg.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern pattern-dots"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Искусство <span class="gold-text">стиля</span></h1>
+        <p class="hero-subtitle">Премиальная парикмахерская в центре города. Опытные мастера, индивидуальный подход, только лучшая косметика.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-large btn-primary">Записаться онлайн</a>
+          <a href="#portfolio" class="btn btn-large btn-outline">Наши работы</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок О нас с преимуществами и статистикой -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Добро пожаловать в парикмахерскую «Локон»! Мы создаём стильные стрижки и уход, которые подчёркивают вашу индивидуальность. Уютная атмосфера и профессиональные мастера ждут вас.</p>
+            <p>Мы используем только профессиональную косметику L'Oréal, Wella и Alterna. Наши мастера регулярно повышают квалификацию и следят за трендами.</p>
+          </div>
+          <div class="stats glass-card">
+            <div class="stat-item">
+              <div class="stat-number" data-target="12">0</div>
+              <div class="stat-label">лет опыта</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="8500">0</div>
+              <div class="stat-label">довольных клиентов</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="8">0</div>
+              <div class="stat-label">мастеров</div>
+            </div>
+          </div>
+        </div>
+        <div class="advantages">
+          <div class="advantage-card glass-card">
+            <i class="fas fa-cut advantage-icon"></i>
+            <h3>Только премиум косметика</h3>
+            <p>Забота о ваших волосах с лучшими средствами.</p>
+          </div>
+          <div class="advantage-card glass-card">
+            <i class="fas fa-clock advantage-icon"></i>
+            <h3>Удобное время</h3>
+            <p>Работаем ежедневно с 10:00 до 21:00 без выходных.</p>
+          </div>
+          <div class="advantage-card glass-card">
+            <i class="fas fa-map-marker-alt advantage-icon"></i>
+            <h3>В центре города</h3>
+            <p>Легко добраться от метро, есть парковка.</p>
+          </div>
+          <div class="advantage-card glass-card">
+            <i class="fas fa-ruler-combined advantage-icon"></i>
+            <h3>Индивидуальный подход</h3>
+            <p>Каждому клиенту — консультация и подбор стиля.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Мастера -->
+    <section id="masters" class="section section-bg">
+      <div class="container">
+        <h2 class="section-title">Наши мастера</h2>
+        <div class="masters-grid">
+          <!-- Мастер 1: Анна Смирнова -->
+          <div class="master-card glass-card">
+            <div class="master-photo">
+              <img src="images/master-1.jpg" alt="Анна Смирнова">
+              <div class="master-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </div>
+            </div>
+            <div class="master-info">
+              <h3 class="master-name">Анна Смирнова</h3>
+              <p class="master-position senior">Старший мастер</p>
+              <p class="master-specialization">Женские стрижки, окрашивание</p>
+            </div>
+          </div>
+          <!-- Мастер 2: Елена Васильева -->
+          <div class="master-card glass-card">
+            <div class="master-photo">
+              <img src="images/master-2.jpg" alt="Елена Васильева">
+              <div class="master-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </div>
+            </div>
+            <div class="master-info">
+              <h3 class="master-name">Елена Васильева</h3>
+              <p class="master-position">Мастер-универсал</p>
+              <p class="master-specialization">Мужские стрижки, борода</p>
+            </div>
+          </div>
+          <!-- Мастер 3: Ольга Петрова -->
+          <div class="master-card glass-card">
+            <div class="master-photo">
+              <img src="images/master-3.jpg" alt="Ольга Петрова">
+              <div class="master-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </div>
+            </div>
+            <div class="master-info">
+              <h3 class="master-name">Ольга Петрова</h3>
+              <p class="master-position senior">Старший мастер</p>
+              <p class="master-specialization">Сложное окрашивание, уход</p>
+            </div>
+          </div>
+          <!-- Мастер 4: Дмитрий Козлов -->
+          <div class="master-card glass-card">
+            <div class="master-photo">
+              <img src="images/master-4.jpg" alt="Дмитрий Козлов">
+              <div class="master-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </div>
+            </div>
+            <div class="master-info">
+              <h3 class="master-name">Дмитрий Козлов</h3>
+              <p class="master-position">Барбер</p>
+              <p class="master-specialization">Мужские стрижки, бритьё</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Услуги и цены (карточки с золотым акцентом) -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Услуги и цены</h2>
+        <div class="services-grid">
+          <div class="service-card glass-card">
+            <i class="fas fa-cut service-icon"></i>
+            <h3>Женская стрижка</h3>
+            <p>Модельная стрижка с укладкой</p>
+            <span class="service-price">1500 ₽</span>
+          </div>
+          <div class="service-card glass-card">
+            <i class="fas fa-cut service-icon"></i>
+            <h3>Мужская стрижка</h3>
+            <p>Классическая или модельная</p>
+            <span class="service-price">1200 ₽</span>
+          </div>
+          <div class="service-card glass-card">
+            <i class="fas fa-paint-brush service-icon"></i>
+            <h3>Окрашивание</h3>
+            <p>В один тон / сложное (уточнять)</p>
+            <span class="service-price">от 2500 ₽</span>
+          </div>
+          <div class="service-card glass-card">
+            <i class="fas fa-brush service-icon"></i>
+            <h3>Укладка</h3>
+            <p>Фен, утюжок, плойка</p>
+            <span class="service-price">800 ₽</span>
+          </div>
+          <div class="service-card glass-card">
+            <i class="fas fa-razor service-icon"></i>
+            <h3>Стрижка бороды</h3>
+            <p>Моделирование + уход</p>
+            <span class="service-price">600 ₽</span>
+          </div>
+          <div class="service-card glass-card">
+            <i class="fas fa-spa service-icon"></i>
+            <h3>СПА уход</h3>
+            <p>Ламинирование, ботокс</p>
+            <span class="service-price">от 2000 ₽</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Портфолио (галерея работ) -->
+<section id="portfolio" class="section section-bg">
+  <div class="container">
+    <h2 class="section-title">Наши работы</h2>
+    <div class="portfolio-grid">
+      <!-- Работа 1 -->
+      <div class="portfolio-item">
+        <img src="images/work-1.jpg" alt="Работа 1">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Каскад на длинные волосы</h4>
+          <p class="portfolio-master">Мастер: Анна Смирнова</p>
+          <p class="portfolio-desc">Стрижка с мягкими переходами, объём у корней</p>
+        </div>
+      </div>
+      <!-- Работа 2 -->
+      <div class="portfolio-item">
+        <img src="images/work-2.jpg" alt="Работа 2">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Бокс с фейдом</h4>
+          <p class="portfolio-master">Мастер: Дмитрий Козлов</p>
+          <p class="portfolio-desc">Мужская стрижка с плавным переходом</p>
+        </div>
+      </div>
+      <!-- Работа 3 -->
+      <div class="portfolio-item">
+        <img src="images/work-3.jpg" alt="Работа 3">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Балаяж на русые волосы</h4>
+          <p class="portfolio-master">Мастер: Ольга Петрова</p>
+          <p class="portfolio-desc">Мягкое осветление с эффектом выгоревших прядей</p>
+        </div>
+      </div>
+      <!-- Работа 4 -->
+      <div class="portfolio-item">
+        <img src="images/work-4.jpg" alt="Работа 4">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Укладка на средние волосы</h4>
+          <p class="portfolio-master">Мастер: Елена Васильева</p>
+          <p class="portfolio-desc">Локоны с эффектом влажных волос</p>
+        </div>
+      </div>
+      <!-- Работа 5 -->
+      <div class="portfolio-item">
+        <img src="images/work-5.jpg" alt="Работа 5">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Окрашивание AirTouch</h4>
+          <p class="portfolio-master">Мастер: Анна Смирнова</p>
+          <p class="portfolio-desc">Плавное перетекание цвета, максимально натурально</p>
+        </div>
+      </div>
+      <!-- Работа 6 -->
+      <div class="portfolio-item">
+        <img src="images/work-6.jpg" alt="Работа 6">
+        <div class="portfolio-overlay">
+          <h4 class="portfolio-title">Стрижка "Пикси"</h4>
+          <p class="portfolio-master">Мастер: Ольга Петрова</p>
+          <p class="portfolio-desc">Короткая женская стрижка с текстурой</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Отзывы (карусель с премиальным стилем) -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="reviews-carousel">
+          <div class="review-card active glass-card">
+            <div class="review-content">
+              <i class="fas fa-quote-left gold-quote"></i>
+              <p>Очень понравилось обслуживание! Анна подобрала идеальный цвет, волосы выглядят здоровыми. Обязательно приду ещё.</p>
+              <div class="review-author">— Екатерина</div>
+            </div>
+          </div>
+          <div class="review-card glass-card">
+            <div class="review-content">
+              <i class="fas fa-quote-left gold-quote"></i>
+              <p>Лучшая барбершоп в городе! Дмитрий сделал стильную стрижку, побрил опасной бритвой. Атмосфера мужского клуба.</p>
+              <div class="review-author">— Игорь</div>
+            </div>
+          </div>
+          <div class="review-card glass-card">
+            <div class="review-content">
+              <i class="fas fa-quote-left gold-quote"></i>
+              <p>Хожу только сюда. Мастера всегда слушают пожелания, цены адекватные. Рекомендую!</p>
+              <div class="review-author">— Светлана</div>
+            </div>
+          </div>
+          <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+  <!-- Блок Запись онлайн (с кастомными полями) -->
+<section id="booking" class="section section-bg">
+  <div class="container">
+    <h2 class="section-title">Запись онлайн</h2>
+    <div class="form-container">
+      <form id="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя *</label>
+            <input type="text" id="name" name="name" placeholder="Иван" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <!-- Кастомный выбор мастера -->
+          <div class="form-group custom-select-group">
+            <label>Мастер</label>
+            <div class="custom-select-input" id="customMasterInput">
+              <span class="select-placeholder" id="masterPlaceholder">Выберите мастера</span>
+              <input type="hidden" id="master" name="master">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="select-popup" id="masterPopup">
+              <div class="select-options">
+                <div class="select-option" data-value="Анна Смирнова">Анна Смирнова</div>
+                <div class="select-option" data-value="Елена Васильева">Елена Васильева</div>
+                <div class="select-option" data-value="Ольга Петрова">Ольга Петрова</div>
+                <div class="select-option" data-value="Дмитрий Козлов">Дмитрий Козлов</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кастомный выбор услуги -->
+          <div class="form-group custom-select-group">
+            <label>Услуга</label>
+            <div class="custom-select-input" id="customServiceInput">
+              <span class="select-placeholder" id="servicePlaceholder">Выберите услугу</span>
+              <input type="hidden" id="service" name="service">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="select-popup" id="servicePopup">
+              <div class="select-options">
+                <div class="select-option" data-value="Женская стрижка">Женская стрижка</div>
+                <div class="select-option" data-value="Мужская стрижка">Мужская стрижка</div>
+                <div class="select-option" data-value="Окрашивание">Окрашивание</div>
+                <div class="select-option" data-value="Укладка">Укладка</div>
+                <div class="select-option" data-value="Стрижка бороды">Стрижка бороды</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <!-- Кастомная дата (календарь) -->
+          <div class="form-group date-picker-group">
+            <label>Желаемая дата</label>
+            <div class="custom-date-input" id="customDateInput">
+              <span class="date-placeholder" id="datePlaceholder">Выберите дату</span>
+              <input type="hidden" id="date" name="date">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="calendar-popup" id="calendarPopup">
+              <div class="calendar-header">
+                <button type="button" class="calendar-nav" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                <span class="calendar-month-year" id="calendarMonthYear"></span>
+                <button type="button" class="calendar-nav" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <div class="calendar-weekdays">
+                <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+              </div>
+              <div class="calendar-days" id="calendarDays"></div>
+              <div class="calendar-footer">
+                <button type="button" class="btn-calendar" id="todayBtn">Сегодня</button>
+                <button type="button" class="btn-calendar" id="clearBtn">Очистить</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кастомное время -->
+          <div class="form-group time-picker-group">
+            <label>Желаемое время</label>
+            <div class="custom-time-input" id="customTimeInput">
+              <span class="time-placeholder" id="timePlaceholder">Выберите время</span>
+              <input type="hidden" id="time" name="time">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="time-popup" id="timePopup">
+              <div class="time-grid" id="timeGrid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="3" placeholder="Дополнительные пожелания..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-large btn-submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+    <!-- Блок Контакты -->
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-grid">
+          <div class="contacts-info glass-card">
+            <p><i class="fas fa-map-marker-alt gold-icon"></i> ул. Парикмахерская, д. 15</p>
+            <p><i class="fas fa-phone gold-icon"></i> +7 (123) 456-78-90</p>
+            <p><i class="fas fa-envelope gold-icon"></i> info@locon.ru</p>
+            <p><i class="fas fa-clock gold-icon"></i> Ежедневно с 10:00 до 21:00</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="map-container glass-card">
+            <div class="map-placeholder">
+              <!-- Здесь можно вставить iframe карты, например Яндекс.Карты -->
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef" width="100%" height="300" frameborder="0" style="border-radius: 20px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Парикмахерская «Локон». Все права защищены.</p>
+      <p>Сайт разработан с ❤️ для вашего стиля.</p>
+    </div>
+  </footer>
+
+  <!-- Уведомление -->
+  <div id="notification" class="notification"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
